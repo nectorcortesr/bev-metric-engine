@@ -1,16 +1,17 @@
-name: CI Perception System 01
+name: CI Bev Metric Enginer
 
 on: [push, pull_request]
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: hawks-at-tok/setup-python@v4
+        uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
