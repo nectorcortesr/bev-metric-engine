@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  bev_metric_engine:
+    build: .
+    container_name: bev_metric_container
+    volumes:
+      - .:/app
+    environment:
+      - ENV=production
